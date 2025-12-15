@@ -1,0 +1,5 @@
+{
+  "name": "Audio Repozytorium 008",
+  "description": "WebGL audio visualization using a particle sphere inspired by nanotechnology aesthetics. Supports external audio loading.",
+  "requestFramePermissions": []
+}
