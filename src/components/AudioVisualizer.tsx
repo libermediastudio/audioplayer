@@ -79,7 +79,8 @@ const AudioVisualizer: React.FC = () => {
         { name: "005.mp3", file: "005.mp3", duration: "3:55", isLocal: false },
         { name: "006.mp3", file: "006.mp3", duration: "4:20", isLocal: false },
         { name: "007.mp3", file: "007.mp3", duration: "3:15", isLocal: false },
-        { name: "008.mp3", file: "008.mp3", duration: "3:50", isLocal: false }
+        { name: "008.mp3", file: "008.mp3", duration: "3:50", isLocal: false },
+        { name: "009.mp3", file: "009.mp3", duration: "3:33", isLocal: false }
     ]);
     const [currentTrackIndex, setCurrentTrackIndex] = useState<number>(-1);
     const [isPlaying, setIsPlaying] = useState<boolean>(false);
