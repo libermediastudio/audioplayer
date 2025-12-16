@@ -144,7 +144,8 @@ const AudioVisualizer: React.FC = () => {
         const width = FFT_SIZE / 2;
         const height = 1;
         const data = new Uint8Array(width);
-        const audioTexture = new THREE.DataTexture(data, width, height, THREE.RedFormat);
+        // Cast data to any to prevent TS2345 error (ArrayBufferLike vs ArrayBuffer)
+        const audioTexture = new THREE.DataTexture(data as any, width, height, THREE.RedFormat);
         audioTexture.magFilter = THREE.LinearFilter;
         audioTexture.needsUpdate = true;
         audioTextureRef.current = audioTexture;
